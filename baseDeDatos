@@ -1,0 +1,18 @@
+import json
+baseDeDatos = []
+
+for autores in range(1):
+    gramatica = {}
+    nombre = input('Ingrese el nombre del autor: ')
+    palabra = input('Ingrese el concepto: ')
+    definicion = input('Ingrese la definición: ')
+    autores['nombre'] = nombre
+    autores['palabra'] = palabra
+    autores['definicion'] = definicion
+    baseDeDatos.append(gramatica)
+
+print(baseDeDatos)
+
+with open('baseDeDatos.json', 'w') as archivo:
+    json.dump(baseDeDatos, archivo)
+    print("Archivo recuperado")
