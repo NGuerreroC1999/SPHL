@@ -1,0 +1,18 @@
+datos = { "autores" : {
+    "Olmos" : {
+        "Pronombres absolutos" : { 
+            "Singulares" : {
+                "Primera persona": {"Yo" : "Nehoatl"},
+                "Segunda persona": {"Tú" : 'Tehoatl'},
+                'Tercera persona': {'Aquel' : 'Yehoatl'}
+             }
+            },
+            'Plurales' : {
+                "Primera persona": {"Nosotros" : "Tehoantin"},
+                "Segunda persona": {"Vosotros" : 'Amehoantin'},
+                'Tercera persona': {'Aquellos' : 'Yehoantin'}                
+             }
+    }
+             }
+}
+print(datos["autores"]['Olmos']['Pronombres absolutos'])
